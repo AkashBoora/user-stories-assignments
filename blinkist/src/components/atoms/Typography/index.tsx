@@ -1,11 +1,16 @@
 import React from "react";
+import Typography, { TypographyProps } from "@mui/material/Typography";
 
-const Typography = () => {
+const TypographyComponent = ({
+  variant,
+  children,
+  ...props
+}: TypographyProps) => {
   return (
-    <div>
-      <p>Typography</p>
-    </div>
+    <Typography variant={variant} {...props}>
+      {children}
+    </Typography>
   );
 };
 
-export default Typography;
+export default TypographyComponent;

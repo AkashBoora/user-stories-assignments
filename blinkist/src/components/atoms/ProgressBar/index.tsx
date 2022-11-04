@@ -1,9 +1,14 @@
+import { LinearProgress } from "@mui/material";
 import React from "react";
 
-const ProgressBar = () => {
+interface ProgressBarProps {
+  value: number;
+}
+
+const ProgressBar = ({ value }: ProgressBarProps) => {
   return (
     <div>
-      <p>ProgressBar</p>
+      <LinearProgress color="inherit" value={value} />
     </div>
   );
 };

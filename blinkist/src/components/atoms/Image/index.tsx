@@ -1,9 +1,15 @@
 import React from "react";
 
-const Image = () => {
+interface ImageProps {
+  src: string;
+  height?: string;
+  width?: string;
+}
+
+const Image = ({ src, width, height }: ImageProps) => {
   return (
     <div>
-      <p>Image</p>
+      <img src={src} width={width} height={height} alt="imageComponent" />
     </div>
   );
 };

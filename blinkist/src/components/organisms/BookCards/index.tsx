@@ -1,10 +1,28 @@
+import { Grid } from "@mui/material";
 import React from "react";
+import { StringLiteral } from "typescript";
+import BookCard from "../../molecules/BookCard";
 
-const BookCards = () => {
+export interface Book {
+  bookImage: StringLiteral;
+  bookName: string;
+  bookAuthor: string;
+  readTime: number;
+  finishedTime: number;
+}
+interface BookCardsProps {
+  books: Book[];
+}
+
+const BookCards = ({ books }: BookCardsProps) => {
   return (
-    <div>
-      <p>BookCards</p>
-    </div>
+    <Grid container>
+      {books.map((book) => (
+        <Grid item>
+          <BookCard book={book} />
+        </Grid>
+      ))}
+    </Grid>
   );
 };
 
