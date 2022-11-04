@@ -1,11 +1,17 @@
 import { Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Icon from "../../atoms/Icon";
 import Image from "../../atoms/Image";
 import ExtendedNav from "../../molecules/ExtendedNav";
 import IconAndText from "../../molecules/IconAndText";
+import SearchBar from "../../molecules/SearchBar";
 
 const Header = () => {
+  const [showSearchBar, setSearchBar] = useState(false);
+  const [showExploreMenu, setShowExploremenu] = useState(false);
+  const handleSearchBarChange = () => {};
+  const handleExploreMenuChange = () => {};
+
   return (
     <div>
       <Grid container>
@@ -13,7 +19,7 @@ const Header = () => {
           <Grid item>
             <Image src="logo.png" />
             <Icon src="search.png" />
-            <IconAndText text="Explore" icon="arrow.svg" />
+            <IconAndText text="Explore" icon="arrow.svg"/>
             <Typography children="My Library" variant="body1" />
             <Typography children="Highlights" variant="body1" />
           </Grid>
@@ -22,7 +28,9 @@ const Header = () => {
           </Grid>
         </Grid>
         <Grid item>
-          <ExtendedNav/>
+          {/*conditional rendering using show search bar setSearchBar*/}
+          <SearchBar handleChange={handleSearchBarChange} />
+          <ExtendedNav />
         </Grid>
       </Grid>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tabs as MuiTabs } from "@mui/material";
 
 interface TabPanelProps {
@@ -6,9 +6,12 @@ interface TabPanelProps {
 }
 
 const Tabs = ({ data }: TabPanelProps) => {
-  const handleTabChange = (event: any) => {};
+  const [activeTab, setActiveTab] = useState(data[0]);
+  const handleTabChange = (event: any) => {
+    setActiveTab(event.target.value);
+  };
   return (
-    <MuiTabs value={data[0]} onChange={(event) => handleTabChange(event)}>
+    <MuiTabs value={activeTab} onChange={(event) => handleTabChange(event)}>
       {/* Map tab data */}
     </MuiTabs>
   );
