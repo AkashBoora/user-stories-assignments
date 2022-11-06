@@ -1,6 +1,6 @@
 import { Box, Grid, styled } from '@mui/material'
 import React from 'react'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 import TypographyComponent from '../../atoms/Typography'
 import Footer from '../../molecules/Footer'
 import CheckoutCard from '../../organisms/CheckoutCard'

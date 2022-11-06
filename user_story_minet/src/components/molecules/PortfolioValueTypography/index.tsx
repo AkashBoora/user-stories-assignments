@@ -3,7 +3,7 @@ import React from 'react'
 import TypographyComponent from '../../atoms/Typography'
 import decreasingTrend from '../../../assets/icons/redDecreasingTrend.svg'
 import increasingTrend from '../../../assets/icons/greenIncreasingTrend.svg'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 import { formatCurrency } from '../../../utils/constants'
 
 interface PortfolioValueTypographyProps {

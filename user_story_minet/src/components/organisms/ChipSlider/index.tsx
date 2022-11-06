@@ -1,12 +1,12 @@
 import { Box, Grid, styled } from '@mui/material'
 import TypographyComponent from '../../atoms/Typography'
-import IconWithTypography from '../../molecules/iconWithTypography'
+import IconWithTypography from '../../molecules/IconWithTypography'
 import InfoIcon from '../../../assets/icons/info.svg'
 import theme from '../../../theme/index'
 import LeftIcon from '../../../assets/icons/chevronRight.svg'
 import RightIcon from '../../../assets/icons/chevronLeft.svg'
 import { cryptoCoins } from '../../../utils/constants'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 import ChipItem from '../../atoms/ChipItem'
 
 interface CryptoCoin {

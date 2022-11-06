@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, styled } from '@mui/material'
-import IconWithTypography from '../iconWithTypography'
+import IconWithTypography from '../IconWithTypography'
 import Graph from '../WatchListGraph'
 import Chip from '../../atoms/ChipItem/index'
 

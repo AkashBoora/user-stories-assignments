@@ -2,7 +2,7 @@ import { MenuItem, Select, styled } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 import theme from '../../../theme'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 import TypographyComponent from '../../atoms/Typography'
 import ChevronDown from './../../../assets/icons/Vector.svg'
 

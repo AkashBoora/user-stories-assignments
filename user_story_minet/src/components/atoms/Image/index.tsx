@@ -1,7 +1,13 @@
-import React from "react";
+import React from 'react'
 
-const Image = () => {
-  return <div>Image</div>;
-};
+interface ImageComponentProps {
+  src: string
+  height: string
+  width: string
+}
 
-export default Image;
+const ImageComponent = (props: ImageComponentProps) => {
+  const { src, width, height } = props
+  return <img data-testid="image" src={src} width={width} height={height}></img>
+}
+export default ImageComponent

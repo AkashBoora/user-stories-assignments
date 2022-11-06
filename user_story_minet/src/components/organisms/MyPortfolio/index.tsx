@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Divider, Grid, styled } from '@mui/material'
 import TypographyComponent from '../../atoms/Typography'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 import chart from '../../../assets/icons/chart.svg'
 import list from '../../../assets/icons/list.svg'
 import PortfolioCard from '../../molecules/PortfolioCard'

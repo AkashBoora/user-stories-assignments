@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from '@mui/system'
 import Box from '@mui/material/Box'
 import TypographyComponent from '../../atoms/Typography'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 import { Grid } from '@mui/material'
 import Tick from '../../../assets/icons/selected.svg'
 type Props = {

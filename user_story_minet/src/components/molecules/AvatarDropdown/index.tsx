@@ -1,7 +1,7 @@
 import { Grid, styled } from '@mui/material';
 import React from 'react'
-import AvatarComponent from '../../atoms/avatar';
-import IconComponent from '../../atoms/icons';
+import AvatarComponent from '../../atoms/Avatar';
+import IconComponent from '../../atoms/Icons';
 import chevronDropdown from '../../../assets/icons/chevronDown.svg'
 
 const StyledIconContainer = styled(Grid)({

@@ -1,7 +1,23 @@
-import React from "react";
+import React from 'react'
+import Avatar from '@mui/material/Avatar'
+import Logo from '../../../assets/images/avatar.svg'
 
-const Avatar = () => {
-  return <div>Avatar</div>;
-};
+interface AvatarComponentProps{
+    height:string;
+    width:string;
+}
 
-export default Avatar;
+const AvatarComponent = (props:AvatarComponentProps) => {
+  return (
+    <div>
+      <Avatar
+        alt="Avatar"
+        src={Logo}
+        sx={{ width: props.width, height: props.height }}
+        data-testid="avatar"
+      />
+    </div>
+  )
+}
+
+export default AvatarComponent

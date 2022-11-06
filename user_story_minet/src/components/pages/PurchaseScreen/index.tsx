@@ -1,5 +1,5 @@
 import { Box, Grid } from '@mui/material'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 import TypographyComponent from '../../atoms/Typography'
 import Footer from '../../molecules/Footer'
 import AmountDetailsCardComponent from '../../organisms/AmountDetailsCard'

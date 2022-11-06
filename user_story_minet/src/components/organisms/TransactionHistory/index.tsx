@@ -5,11 +5,11 @@ import Failure from '../../../assets/images/failed.svg'
 import Pending from '../../../assets/images/processed.svg'
 import TypographyComponent from '../../atoms/Typography'
 import theme from '../../../theme'
-import IconWithTypography from '../../molecules/iconWithTypography'
+import IconWithTypography from '../../molecules/IconWithTypography'
 import ChipItem from '../../atoms/ChipItem'
 import ValueChangeTypographyComponent from '../../molecules/ValueChangeTypography'
 import Slider from '../../../assets/images/slider.svg'
-import IconComponent from '../../atoms/icons'
+import IconComponent from '../../atoms/Icons'
 
 interface CoinProps {
   name: string
