@@ -1,9 +1,17 @@
+import { Typography } from "@mui/material";
 import React from "react";
+import Icon from "../../atoms/Icon";
 
-const IconAndText = () => {
+interface IconAndTextProps {
+  icon: string;
+  text: string;
+}
+
+const IconAndText = ({ icon, text }: IconAndTextProps) => {
   return (
     <div>
-      <p>IconAndText</p>
+      <Icon src={icon} />
+      <Typography variant={"subtitle1"} children={text} />
     </div>
   );
 };

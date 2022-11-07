@@ -1,9 +1,14 @@
 import React from "react";
+import MuiAvatar from '@mui/material/Avatar'
 
-const Avatar = () => {
+interface AvatarProps {
+  src: string;
+}
+
+const Avatar = ({ src }: AvatarProps) => {
   return (
     <div>
-      <p>Avatar</p>
+      <MuiAvatar src={src}/>
     </div>
   );
 };

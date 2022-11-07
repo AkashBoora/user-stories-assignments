@@ -1,9 +1,27 @@
 import React from "react";
+import {
+  Button as MuiButton,
+  ButtonProps as MuiButtonProps,
+} from "@mui/material";
 
-const Button = () => {
+interface ButtonProps extends MuiButtonProps {
+}
+
+const Button = ({
+  children,
+  variant,
+  color,
+  onClick,
+}: ButtonProps) => {
   return (
     <div>
-      <p>Button</p>
+      <MuiButton
+        variant={variant}
+        color={color}
+        onClick={onClick}
+      >
+        {children}
+      </MuiButton>
     </div>
   );
 };
