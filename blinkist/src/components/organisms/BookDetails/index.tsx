@@ -1,10 +1,11 @@
-import { Grid } from "@mui/material";
-import React from "react";
+import { Grid, Modal } from "@mui/material";
+import React, { useState } from "react";
 import Button from "../../atoms/Button";
 import Image from "../../atoms/Image";
 import TypographyComponent from "../../atoms/Typography";
 import IconAndText from "../../molecules/IconAndText";
 import { Book } from "../BookCards";
+import KindlePopup from "../KindlePopup";
 import Tabs from "../Tabs/index ";
 
 interface BookDetailsProps {
@@ -12,6 +13,10 @@ interface BookDetailsProps {
 }
 
 const BookDetails = ({ book }: BookDetailsProps) => {
+  const [isPopupActive, setPopupActive] = useState(false);
+  const handleBuyNowClick = () => {
+    setPopupActive(true);
+  };
   const handleReadNowClick = () => {};
   return (
     <Grid container>
@@ -56,7 +61,10 @@ const BookDetails = ({ book }: BookDetailsProps) => {
                     <Button children="Read Now" />
                   </Grid>
                   <Grid item>
-                    <Button children={"Read Now"} onClick={handleReadNowClick} />
+                    <Button
+                      children={"Read Now"}
+                      onClick={handleReadNowClick}
+                    />
                   </Grid>
                   <Grid item></Grid>
                   <Button children="send to Kindle" />
@@ -72,6 +80,7 @@ const BookDetails = ({ book }: BookDetailsProps) => {
       <Grid itemScope md={10} display="flex" justifyContent="left !important">
         <Tabs data={[]} />
       </Grid>
+      <KindlePopup isActive={isPopupActive} />
     </Grid>
   );
 };
